@@ -67,7 +67,7 @@
         </property>
         <property name="minimumSize">
          <size>
-          <width>20</width>
+          <width>24</width>
           <height>0</height>
          </size>
         </property>
@@ -92,7 +92,7 @@
          <x>0</x>
          <y>0</y>
          <width>1062</width>
-         <height>284</height>
+         <height>280</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout"/>
@@ -153,9 +153,15 @@
           <pointsize>12</pointsize>
          </font>
         </property>
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
         <property name="styleSheet">
          <string notr="true">border-radius: 10px;
-padding: 3px;</string>
+padding: 5px;</string>
         </property>
         <property name="placeholderText">
          <string>Enter Query</string>
@@ -169,8 +175,11 @@ padding: 3px;</string>
           <pointsize>12</pointsize>
          </font>
         </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">border-radius:5px;</string>
         </property>
         <property name="text">
          <string/>
@@ -231,8 +240,26 @@ padding-right:5px;
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuMode">
+    <property name="title">
+     <string>Mode</string>
+    </property>
+    <addaction name="actionTfidfVsm"/>
+    <addaction name="actionVsm"/>
+   </widget>
+   <addaction name="menuMode"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionTfidfVsm">
+   <property name="text">
+    <string>TF-IDF + VSM</string>
+   </property>
+  </action>
+  <action name="actionVsm">
+   <property name="text">
+    <string>VSM Only</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
