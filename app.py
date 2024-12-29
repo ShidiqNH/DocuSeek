@@ -3,7 +3,7 @@ import os
 from PyQt6 import uic
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFontMetrics, QIcon
-from PyQt6.QtWidgets import QApplication, QMainWindow, QFileDialog, QVBoxLayout, QWidget, QScrollArea, QFrame, QLabel, QHBoxLayout, QMessageBox
+from PyQt6.QtWidgets import QApplication, QMainWindow, QFileDialog, QVBoxLayout, QWidget, QScrollArea, QFrame, QLabel, QHBoxLayout, QMessageBox, QDialog
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -14,6 +14,7 @@ class MainWindow(QMainWindow):
         # Connect Button
         self.selectDir.clicked.connect(self.dirSelect)
         self.searchButton.clicked.connect(self.processFiles)
+        self.aboutButton.clicked.connect(self.aboutPage)
         self.querySearch.returnPressed.connect(self.processFiles)
 
         # Variable
@@ -103,6 +104,11 @@ class MainWindow(QMainWindow):
 
         self.showToast(f"Processing files with query: '{query}'", "Query Entered", QMessageBox.Icon.Information)
 
+    # About Page
+    def aboutPage(self):
+            aboutWindow = AboutWindow(self)
+            aboutWindow.exec()
+
 
 # Widget For Displaying Files
 class CustomWidget(QFrame):
@@ -138,7 +144,6 @@ class CustomWidget(QFrame):
         # Placeholder For Similarity
         self.similarityLabel.setText("Similarity goes here")
 
-        
     # Function To Show Messagebox
     def showToast(self, message, title, icon=QMessageBox.Icon.NoIcon):
         msg = QMessageBox()
@@ -147,6 +152,14 @@ class CustomWidget(QFrame):
         msg.setWindowTitle(title)
         msg.setStandardButtons(QMessageBox.StandardButton.Ok)
         msg.exec()
+      
+        
+# About Page
+class AboutWindow(QDialog):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        uic.loadUi("aboutPage.ui", self)  # Load the AboutPage UI
+        self.setWindowTitle("About DocuSeek")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
