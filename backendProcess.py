@@ -124,7 +124,7 @@ class DocumentProcessor:
         processedDocuments = [self.preprocess(doc["original"])[0] for doc in documents]
 
         # Calculate TF-IDF for documents
-        vectorizer = TfidfVectorizer()
+        vectorizer = TfidfVectorizer(norm=None)
         tfidfMatrix = vectorizer.fit_transform(processedDocuments)
 
         # Transform the query into a TF-IDF vector
