@@ -86,6 +86,16 @@
    </item>
    <item>
     <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="3">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Sadira AF</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
      <item row="1" column="4">
       <spacer name="horizontalSpacer_3">
        <property name="orientation">
@@ -99,6 +109,74 @@
        </property>
       </spacer>
      </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>assets/shidiq.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>assets/sadira.jpeg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
      <item row="1" column="0">
       <spacer name="horizontalSpacer_2">
        <property name="orientation">
@@ -111,16 +189,6 @@
         </size>
        </property>
       </spacer>
-     </item>
-     <item row="2" column="3">
-      <widget class="QLabel" name="label_6">
-       <property name="text">
-        <string>Sadira AF - 152022018</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
      </item>
      <item row="1" column="2">
       <spacer name="horizontalSpacer">
@@ -138,39 +206,7 @@
      <item row="2" column="1">
       <widget class="QLabel" name="label_5">
        <property name="text">
-        <string>Shidiq NH - 152022016</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="label_3">
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>100</height>
-        </size>
-       </property>
-       <property name="text">
-        <string>IMG HERE</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="QLabel" name="label_4">
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>100</height>
-        </size>
-       </property>
-       <property name="text">
-        <string>IMG HERE</string>
+        <string>Shidiq NH</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -181,6 +217,26 @@
       <widget class="QLabel" name="label_7">
        <property name="text">
         <string>Contributors</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>1552022016</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>152022018</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
